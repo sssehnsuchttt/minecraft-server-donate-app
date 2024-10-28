@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'MinecraftFive';
+  src: local('MinecraftFive'), url('../public/fonts/minecraft-five.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.minecraft-five {
+  font-family: 'MinecraftFive', sans-serif;
+}
+
+.minecraft-items {
+  image-rendering: pixelated;
+
+}
+
+.bg-grainy {
+  background-image: url('/public/noise.svg'); 
+  background-size: auto;
+  background-repeat: repeat; 
+  background-position: center; 
+}
+
+.bg {
+  background-color: rgba(0, 0, 0, 0.0);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  visibility: hidden;
+  transition: background-color 0.3s linear, width 0s 0.3s, height 0s 0.3s, visibility 0s 0.3s;
+}
+
+.bg.active {
+  background-color: rgba(0, 0, 0, 0.7);
+  visibility: unset;
+  transition: background-color 0.3s linear;
+}
+
+@keyframes popupAnimation {
+  0% {
+    transform: scale(0.8) translateY(calc(10%));
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  80% {
+    transform: scale(1.03)
+  }
+  100% {
+    transform: scale(1) translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes popupAnimationClose {
+  0% {
+    transform: scale(1) translateY(0%);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(1.03)
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8) translateY(calc(-20%));
+    opacity: 0;
+  }
+}
+
+.popup {
+  transition: visibility 0s 0s;
+  animation: popupAnimationClose 0.3s ease-in-out forwards;
+}
+
+.popup.active {
+  animation: popupAnimation 0.3s ease-in-out forwards;
+}
+
