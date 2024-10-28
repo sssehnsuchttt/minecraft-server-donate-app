@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/minecraft-server-donate-app/static/css/main.dadd2b48.css",
-    "main.js": "/minecraft-server-donate-app/static/js/main.b1bddd66.js",
+    "main.js": "/minecraft-server-donate-app/static/js/main.d18cce38.js",
     "static/js/453.930583f9.chunk.js": "/minecraft-server-donate-app/static/js/453.930583f9.chunk.js",
     "static/media/minecraft-five.ttf": "/minecraft-server-donate-app/static/media/minecraft-five.83e5279fa431c34e02f5.ttf",
     "index.html": "/minecraft-server-donate-app/index.html",
     "static/media/noise.svg": "/minecraft-server-donate-app/static/media/noise.1dcc5da09ee451ac1b73.svg",
     "main.dadd2b48.css.map": "/minecraft-server-donate-app/static/css/main.dadd2b48.css.map",
-    "main.b1bddd66.js.map": "/minecraft-server-donate-app/static/js/main.b1bddd66.js.map",
+    "main.d18cce38.js.map": "/minecraft-server-donate-app/static/js/main.d18cce38.js.map",
     "453.930583f9.chunk.js.map": "/minecraft-server-donate-app/static/js/453.930583f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dadd2b48.css",
-    "static/js/main.b1bddd66.js"
+    "static/js/main.d18cce38.js"
   ]
 }
